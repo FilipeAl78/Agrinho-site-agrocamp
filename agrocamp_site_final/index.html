@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrocamp - Centro de notícias do campo!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header role="banner">
+    <div class="container">
+      <h1>Agrocamp</h1>
+      <p>Sua fonte de notícias confiável sobre o meio rural e as pessoas do campo</p>
+    </div>
+    <div class="accessibility-bar">
+      <button id="highContrast" aria-pressed="false">Alto Contraste</button>
+      <button id="increaseFont">A+</button>
+      <button id="decreaseFont">A-</button>
+    </div>
+    <nav role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="#news">Novas Notícias</a></li>
+        <li><a href="#weather">Clima</a></li>
+        <li><a href="#market">Preços do mercado</a></li>
+        <li><a href="#tips">Dicas de prática</a></li>
+        <li><a href="#events">Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container" role="main">
+    <section id="news" aria-labelledby="news-title">
+      <h2 id="news-title">Últimas Notícias da Agricultura</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <h3>Novas Técnicas de Agricultura Sustentável</h3>
+          <p>Descubra métodos inovadores para aumentar a produção enquanto protege o meio ambiente...</p>
+          <a href="#">Leia mais</a>
+        </article>
+        <article class="news-card">
+          <h3>Governo Anuncia Novos Subsídios</h3>
+          <p>Agricultores serão beneficiados com novos programas de apoio financeiro a partir do próximo mês...</p>
+          <a href="#">Leia mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="weather" aria-labelledby="weather-title">
+      <h2 id="weather-title">Previsão do Tempo Regional</h2>
+      <div class="weather-widget">
+        <div class="weather-day">
+          <h4>Hoje</h4>
+          <p>Ensolarado, 24°C</p>
+        </div>
+        <div class="weather-day">
+          <h4>Amanhã</h4>
+          <p>Parcialmente Nublado, 22°C</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="market" aria-labelledby="market-title">
+      <h2 id="market-title">Preços das Commodities</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Produto</th>
+            <th scope="col">Preço (por kg)</th>
+            <th scope="col">Variação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trigo</td>
+            <td>$0.25</td>
+            <td class="up">+2%</td>
+          </tr>
+          <tr>
+            <td>Milho</td>
+            <td>$0.18</td>
+            <td class="down">-1%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2023 Agrocamp - Centro de Notícias da Agricultura</p>
+      <p>Contato: info@agrocamp.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
